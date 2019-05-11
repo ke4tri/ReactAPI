@@ -6,7 +6,7 @@ export class FetchData extends Component {
   constructor(props) {
     super(props);
     this.state = { forecasts: [], loading: true };
-
+      //always use relative urls 
     fetch('api/SampleData/WeatherForecasts')
       .then(response => response.json())
       .then(data => {

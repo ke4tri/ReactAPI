@@ -50,6 +50,7 @@ namespace ReactApi
             {
                 routes.MapRoute(
                     name: "default",
+                    //question mark means id isn't required
                     template: "{controller}/{action=Index}/{id?}");
             });
 
